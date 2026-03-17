@@ -102,20 +102,6 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
-
-Run the main file:
-
-```
-python main.py
-```
-
-* The system will start the camera
-* Detect objects and text
-* Speak out the results using audio
-
----
-
 ## 💡 How It Works (Simple Explanation)
 
 1. The camera captures live video
