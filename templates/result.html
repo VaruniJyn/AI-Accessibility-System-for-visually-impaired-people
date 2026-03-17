@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR and Scene Description Result</title>
+</head>
+<body>
+    <h1>Processed Image Analysis</h1>
+    
+    <h2>Scene Description:</h2>
+    <p>{{ description }}</p>
+    
+    <h2>Extracted Text:</h2>
+    <p>{{ extracted_text }}</p>
+    
+    <h2>Detected Objects:</h2>
+    <p>{{ detected_objects }}</p>
+    
+    <h2>Generated Audio:</h2>
+    <audio controls autoplay>
+        <source src="{{ url_for('static', filename='uploads/' + audio_file) }}?v={{ time }}" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <br>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
